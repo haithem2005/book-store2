@@ -2,11 +2,11 @@
 
 
 body,html { 
- background: url(../images/main2.jpg) no-repeat center center fixed; 
+ background: url(../images/book.jpg) no-repeat center center fixed; 
  
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
   background-size: cover;
  
 }
@@ -124,9 +124,12 @@ footer{
 }
 
 .card img{
-    height: auto;
+    height: 200px;
     width: 100%;
     margin: auto;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+  
     
     
 }
@@ -134,8 +137,9 @@ footer{
 .card{
     margin-top: 30px;
     min-height: 500px;
-    
     min-width:   30%;
+    border-radius: 10%;
+    
     
     
     
@@ -201,3 +205,87 @@ footer{
 .block-divider--short {
     width: 35px;
 }
+
+.aboutUs{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 25px;
+   
+}
+
+/*---------------events-form/events-page-----------------------*/
+
+.center-form{
+    margin: 0 auto;
+    padding-top: 50px;
+    max-width: 70%;
+}
+.form-item{
+   margin-bottom: 10px;
+   border:3px solid;
+   border-color: #858181;
+   
+}
+button[type="submit"]{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color:#fafafa;
+    background-color: #E70E13;   
+    border: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-secondary:hover{
+    background-color: #858181 !important;
+    color:yellow!important;
+}
+    
+@media(min-width:776px){
+    .center-form{
+        min-height: 240px;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+
+
+.events-text{
+    color: #fafafa;
+    
+}
+
+/*section for form*/
+.login-container{	
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.login-form-1{
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    color: #333;
+}
+.login-container form{
+	
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login-form-1 .btnSubmit{
+    font-weight: 600;
+    color: #fff;
+    background-color: #0062cc;
+}
+.login-form-1 .ForgetPwd{
+    color: #0062cc;
+    font-weight: 600;
+    text-decoration: none;
+}
+
