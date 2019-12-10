@@ -24,12 +24,13 @@ public class AddNewBookServlet extends HttpServlet{
 		try {
 			
 			Connection connection = DatabaseConnection.initializeDatabase();
-			PreparedStatement statement = connection.prepareStatement("INSERT INTO Book VALUES(?, ?, ?, ?, ?)");
+			PreparedStatement statement = connection.prepareStatement("INSERT INTO Book VALUES(?, ?, ?, ?, ?, ?)");
 			statement.setString(1, request.getParameter("ISBN"));
 			statement.setString(2, request.getParameter("Title"));
 			statement.setString(3, request.getParameter("Author"));
 			statement.setDouble(4, Double.valueOf(request.getParameter("Price")));
 			statement.setString(5, request.getParameter("Category"));
+			statement.setString(6, request.getParameter("ImagePath"));
 
 			statement.executeUpdate();
 			statement.close();

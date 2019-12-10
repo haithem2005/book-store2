@@ -7,6 +7,7 @@ public class Book {
 	private String author;
 	private double price;
 	private String category;
+	private String imagePath;
 
 	public Book(String isbn, String title, String author, double price, String category) {
 		this.isbn = isbn;
@@ -14,6 +15,22 @@ public class Book {
 		this.author = author;
 		this.price = price;
 		this.category = category;
+	}
+	
+	public Book(String isbn, String title, String author, double price, String category, String imagePath) {
+		this.isbn = isbn;
+		this.title = title;
+		this.author = author;
+		this.price = price;
+		this.category = category;
+		this.imagePath = imagePath;
+	}
+
+	public Book(String isbn, String title, String author, double price) {
+		this.isbn = isbn;
+		this.title = title;
+		this.author = author;
+		this.price = price;
 	}
 
 
@@ -48,6 +65,13 @@ public class Book {
 		this.price = price;
 	}
 
+	public String getImagePath() {
+		return imagePath;
+	}
+
+	public void setImagePath(String imagePath) {
+		this.imagePath = imagePath;
+	}
 
 	@Override
 	public String toString() {

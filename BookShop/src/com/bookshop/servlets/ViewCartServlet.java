@@ -18,11 +18,12 @@ public class ViewCartServlet extends HttpServlet{
 			HttpServletResponse response) throws ServletException, IOException{
 
 		PrintWriter out = response.getWriter();
-		response.setContentType("text/html");
-
-		out.println("<html><body><h1>Your cart</h1><ul>");
+//		response.setContentType("text/html");
+//
+//		out.println("<html><body><h1>Your cart</h1><ul>");
 
 		HttpSession session = request.getSession();
+		
 		List<Book> cart = (List<Book>)session.getAttribute("cart");
 
 		if(cart!= null) {

@@ -4,8 +4,6 @@
 <html>
 <head>
 <meta charset="UTF-8">
-
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet"
@@ -24,52 +22,71 @@
 </head>
 <body>
 	<jsp:include page="/Header.jsp"></jsp:include>
-	<div class="container add-container">
-		<div class="row">
-			<div class="col-md-6 add-form-1">
-				<h3>Add a New Book</h3>
-				<hr />
+	<section class="form container">
+		<h1 class="text-light mt-5 ml-5">Add a New Book To The BookShop</h1>
+		<hr class="bg-light ">
+		<hr />
+		<form class="justify-content-center mt-5 ml-5 mr-5"
+			style="border: 1px solid white" action="add-new-book.html"
+			method="post" name="addNewBook">
 
-				<form action="add-new-book.html" method="post" name="addNewBook">
-					<div class="form-group">
-						<input type="text" class="form-control" name="ISBN"
-							placeholder="Enter ISBN" required />
-					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" name="Title"
-							placeholder="Enter Book Title" required />
-					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" name="Author"
-							placeholder="Enter Book Author" required />
-					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" name="Price"
-							placeholder="Enter Book Price" required />
-					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" name="Category"
-							placeholder="Category(Kids, Novel, etc.)" required />
-					</div>
-					<button type="submit" class="btn btn-primary" value="submit">Save</button>
-					<p>
-						<input name="operation" type="hidden" value="addNewBook">
-					</p>
-				</form>
+
+
+			<div class="input-field col-md-4 mt-5 ml-5 mr-5">
+				<input type="text" class="form-control" name="ISBN"
+					placeholder="Enter ISBN" required />
+
 			</div>
-		</div>
-	</div>
+			<br>
+
+			<div class="input-field col-md-4  ml-5 mr-5  ">
+				<input type="text" class="form-control" name="Title"
+					placeholder="Enter Book Title" required />
+			</div>
+
+
+			<br>
+
+			<div class="input-field col-md-4 ml-5 mr-5">
+				<input type="text" class="form-control" name="Author"
+					placeholder="Enter Book Author" required />
+			</div>
+
+			<br>
+			<div class="input-field col-md-4 ml-5 mr-5">
+				<input type="text" class="form-control" name="Price"
+					placeholder="Enter Book Price" required />
+			</div>
+
+
+
+			<br>
+			<div class="input-field col-md-4 ml-5 mr-5">
+				<input type="text" class="form-control" name="Category"
+					placeholder="Enter Category" required />
+			</div>
+			<br>
+
+			<div class="input-field col-md-4 ml-5 mr-5">
+				<input type="text" class="form-control" name="ImagePath"
+					placeholder="Enter Image" required />
+			</div>
+			<br>
+			<button type="submit"
+				class=" save btn btn-primary waves-effect mb-2 justify-content-center "
+				value="submit">Add</button>
+			<p>
+				<input name="operation" type="hidden" value="addNewBook">
+			</p>
+		</form>
+
+
+
+		</form>
+	</section>
+
+	<br>
 	<jsp:include page="/Footer.jsp"></jsp:include>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
-		crossorigin="anonymous "></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 "
-		crossorigin="anonymous "></script>
-	<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
-		crossorigin="anonymous "></script>
+
 </body>
 </html>

@@ -24,60 +24,55 @@
 	href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
 	integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
 	crossorigin="anonymous">
-<title>Our All Books</title>
+<title>Our Books</title>
 </head>
 <body>
 	<jsp:include page="/Header.jsp"></jsp:include>
 	<section class="fluid-container books-heading">
 		<div class="row ">
 			<div class="col-12">
-				<h3 class="sub-title">All Books</h3>
+				<h3 class="sub-title">Book List!</h3>
 			</div>
 		</div>
 	</section>
-	<section class="fluid-container">
-		<div class="row no-gutters">
-			<div class="card-deck">
-				<div class="col-md-6 col-lg-4">
-					<%
-								for (Book nextBook : allBooks) {
-							%>
-					<div class="card">
-						<img src="assets/book.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title"><%=nextBook.getTitle()%></h5>
-							<p class="card-text">
-								by
-								<%=nextBook.getAuthor()%></p>
-							<h7 class="card-text price">$<%=nextBook.getPrice()%></h7>
-						</div>
-						<div class="card-footer">
-							<form method="post" action="addToCart.html">
-								<input type="hidden" name="isbn" value="<%=nextBook.getISBN()%>" />
-								<button type="submit" class="btn btn-primary" value="submit">Add
-									To Cart</button>
-							</form>
-						</div>
-						<%
-								}
-							%>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<br>
+	<section class="container">
+        <article class="card-columns">
+            <%
+                for (Book nextBook : allBooks) {
+            %>
+            <div class="card border-info ml-1 mr-1 shadow-lg p-3 mb-5 rounded">
+                <img src="<%=nextBook.getImagePath()%>" class="card-img-top border-secondary"
+                    alt="image">
+                <div class="card-body ml-5 justify-content-center">
+                    <div>
+                        <h5 class="card-title"><%=nextBook.getTitle()%></h5>
+                        <p class="card-text"><%=nextBook.getAuthor()%></p>
+                        <p class="card-text price">
+                            $
+                            <%=nextBook.getPrice()%></p>
+                    </div>
+                    <div>
+                        <br>
+                        <div>
+                            <form method="post" action="addToCart.html">
+                                <input type="hidden" name="author"
+                                    value="<%=nextBook.getAuthor()%>" />
+                                <button type="submit" class="btn btn-primary waves-effect" id="add"value="submit">Add
+                                    To Cart</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%
+                }
+            %>
+        </article>
+    </section>
+    <br>
 
 	<jsp:include page="/Footer.jsp"></jsp:include>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
-		crossorigin="anonymous "></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 "
-		crossorigin="anonymous "></script>
-	<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
-		crossorigin="anonymous "></script>
+	
 </body>
 </html>

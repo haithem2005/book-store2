@@ -2,7 +2,6 @@ package com.bookshop.servlets;
 
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -17,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.bookshop.database.DatabaseConnection;
 import com.bookshop.domain.Book;
 
-public class DisplayAllBooksServlet extends HttpServlet{
+public class DisplayNovelServlet extends HttpServlet{
 
 	public void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException{
@@ -25,40 +24,38 @@ public class DisplayAllBooksServlet extends HttpServlet{
 		Book book = null;
 		List<Book> allBooks = null;
 		Statement statement = null;
-		PreparedStatement preparedStatement = null;
 
 		try {
 			allBooks = new ArrayList<Book>();
 			ResultSet resultSet = null;
 			Connection connection = DatabaseConnection.initializeDatabase();
-			String sql = "SELECT * FROM Book";
 
+			String sql = "SELECT * FROM Book WHERE Category = 'Novel'";
 			statement = connection.createStatement();
 			resultSet = statement.executeQuery(sql);
+
 			while(resultSet.next()) {
-				String isbn = resultSet.getString("ISBN");
-				String title = resultSet.getString("Title");
-				String author = resultSet.getString("Author");
-				double price = resultSet.getDouble("Price");
-				String category = resultSet.getString("Category");
-				String imagePath = resultSet.getString("ImagePath");
-				book = new Book(isbn, title, author, price,category, imagePath);
+
+				String bookISBN = resultSet.getString("ISBN");
+				String bookTitle = resultSet.getString("Title");
+				String bookAuthor = resultSet.getString("Author");
+				double bookprice = resultSet.getDouble("Price");
+
+				book = new Book(bookISBN, bookTitle, bookAuthor, bookprice);
 				allBooks.add(book);
+
 			}
-			
+
 			request.setAttribute("allBooks", allBooks);
 			statement.close();
-			
+
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/DisplayAllBooks.jsp");
 			dispatcher.forward(request, response);
-			
-		} 
-		
+		}
 		catch (Exception e) {
 			e.printStackTrace();
 		}
 
-		
 	}
 
 }

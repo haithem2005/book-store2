@@ -4,6 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
+<script src=“https://kit.fontawesome.com/57634ef963.js” crossorigin=“anonymous”></script>
 <title>Header</title>
 </head>
 <body>
@@ -35,7 +37,7 @@
 								<div class="dropdown-menu" aria-labelledby="dropdown01">
 									<a class="dropdown-item" href="novels.html">Novels</a> <a
 										class="dropdown-item" href="kids.html">Kids</a> <a
-										class="dropdown-item" href="showall.html">Show All</a>
+										class="dropdown-item" href="display-all-books.html">Show All</a>
 								</div></li>
 						</ul>
 					</div>
@@ -44,10 +46,9 @@
 			<div class="col-9 header-list1">
 
 				<ul class="header-list">
-					<li><a href="signup.html" target="_blank">Login</a></li>
+					<li><a href="signup.html" target="_blank"><i class=“fas fa-user” style="font-size: 20px"></i></a></li>
 
-					<li><a href="shopcart.html" target="_blank"><i
-							class="fa fa-shopping-cart" style="font-size: 20px"></i></a></li>
+					<li><a href="viewCart.html" target="_blank"><i class="fa fa-shopping-cart" style="font-size: 20px"></i></a></li>
 				</ul>
 
 			</div>
