@@ -28,7 +28,7 @@ body,html {
     border:none;
 }
 .nav-item a{
-    color: #4E4D4D !important;
+    color: #f6f6f6 !important;
     margin-left: 20px;
     
     -moz-transition: all .5s ease-in-out;
@@ -38,9 +38,15 @@ body,html {
 }
 .nav-item a:hover{
     transform: translatex(20px);
-    color: #E70E13 !important;
+    color: #800000 !important;
 }
-.navbar-nav .dropdown-menu {
+.dropdown-menu a:hover{
+    transform: translatex(20px);
+    color: #800000 !important;
+    background-color: transparent;
+}
+
+.navbar-nav ,.dropdown-menu {
     background-color: transparent;
     border:none;
 }
@@ -51,9 +57,10 @@ body,html {
 .header-list li{
     display: inline;
     text-decoration: none;
-    font-size: small;
+    font-size: x-large;
     padding-left: 5px;
     padding-right: 5px;
+    
 }
 
 
@@ -61,6 +68,10 @@ body,html {
    margin-right: 20px;
    margin-top: 10px;
    text-align: right;
+   
+}
+.header-list li a{
+    color: #800000;
 }
 
 /*.header-list1{
@@ -83,7 +94,8 @@ footer{
     
 }
 .footer-heading{
-    color: #E70E13;
+    color: #800000;
+    
 }
 
 .social{
@@ -112,6 +124,9 @@ footer{
     padding: 20px;
 
 }
+.footer-heading{
+    text-shadow: 0 0 4px rgb(206, 203, 202);
+}
 
 
 
@@ -120,18 +135,21 @@ footer{
 
 .address{
     margin-top: 25px;
-    color: grey;
+    color:#f6f6f6;
 }
 
 .card img{
-    height: 200px;
-    width: 100%;
+    min-height: 300px;
+	max-height: 300px;
+	height: 300px;
     margin: auto;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
-  
-    
-    
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+ 
+}
+.card-text {
+	max-height: 75px;
+	min-height: 75px;
 }
 
 .card{
@@ -140,18 +158,19 @@ footer{
     min-width:   30%;
     border-radius: 10%;
     
-    
-    
-    
+
 }
 .card-footer{
     text-align: center;
 }
 
 
-.carousel-inner{
-    max-height: 100vh;
+.carousel-inner img{
+    max-height: 500px;
+    
+   
 }
+
 
 .price{
     color: red;
@@ -161,11 +180,13 @@ footer{
     margin-top: 50px;
     margin-left: 20px;
     font-family: 'Pattaya', sans-serif;
+    color:#800000;
 }
 .main-title{
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Black Ops One', cursive;
+    color: #800000;
 }
 
 
@@ -182,6 +203,9 @@ footer{
     margin-left: 20px;
     margin-bottom: 50px;
 }
+.quates-heading{
+    color: black;
+}
 
 
 /* Block dividers */
@@ -194,7 +218,7 @@ footer{
 }
 
 .block-divider--orange {
-    background-color: #f05f40;
+    background-color:  #800000;
     margin-top: 50px;
 }
 
@@ -230,7 +254,6 @@ button[type="submit"]{
     margin-top: 10px;
     margin-bottom: 20px;
     color:#fafafa;
-    background-color: #E70E13;   
     border: none;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
@@ -289,3 +312,19 @@ button[type="submit"]{
     text-decoration: none;
 }
 
+
+
+.form-control{
+    width: 75%;
+    margin-left: 15px;
+    margin-right: 0px;
+}
+
+.header-list {
+    padding:0px;
+}
+
+.card-deck{
+    padding: 0px; 
+    margin: 0px;
+}
