@@ -3,7 +3,7 @@
 <%@page import="com.bookshop.domain.Book"%>
 <%@page import="java.util.List"%>
 <%
-	List<Book> cart = (List<Book>) session.getAttribute("cart");
+	List<Book> cart = (List<Book>)session.getAttribute("cart");
 %>
 <!DOCTYPE html>
 <html>

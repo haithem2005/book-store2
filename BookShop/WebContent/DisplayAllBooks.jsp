@@ -56,9 +56,9 @@
                         <br>
                         <div>
                             <form method="post" action="addToCart.html">
-                                <input type="hidden" name="author"
-                                    value="<%=nextBook.getAuthor()%>" />
-                                <button type="submit" class="btn btn-primary waves-effect" id="add"value="submit">Add
+                                <input type="hidden" name="isbn"
+                                    value="<%=nextBook.getISBN()%>" />
+                                <button type="submit" class="btn btn-primary waves-effect" id="add" value="submit">Add
                                     To Cart</button>
                             </form>
                         </div>

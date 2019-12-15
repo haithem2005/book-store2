@@ -40,8 +40,10 @@ public class DisplayNovelServlet extends HttpServlet{
 				String bookTitle = resultSet.getString("Title");
 				String bookAuthor = resultSet.getString("Author");
 				double bookprice = resultSet.getDouble("Price");
+				String category = "Novel";
+				String bookImagePath = resultSet.getString("ImagePath");
 
-				book = new Book(bookISBN, bookTitle, bookAuthor, bookprice);
+				book = new Book(bookISBN, bookTitle, bookAuthor, bookprice, category, bookImagePath);
 				allBooks.add(book);
 
 			}

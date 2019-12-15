@@ -46,7 +46,8 @@ public class FindBooksServlet extends HttpServlet{
 				String bookAuthor = resultSet.getString("Author");
 				double bookPrice = resultSet.getDouble("Price");
 				String bookCategory = resultSet.getString("Category");
-				book = new Book(bookISBN, bookTitle, bookAuthor, bookPrice, bookCategory);
+				String imagePath = resultSet.getString("ImagePath");
+				book = new Book(bookISBN, bookTitle, bookAuthor, bookPrice, bookCategory, imagePath);
 				allBooks.add(book);
 			}
 //			String operation = request.getParameter("operation");
@@ -90,7 +91,7 @@ public class FindBooksServlet extends HttpServlet{
 			statement.close();
 			connection.close();
 			
-			RequestDispatcher dispatcher =getServletContext().getRequestDispatcher("/DisplayBooksBySearch.jsp");
+			RequestDispatcher dispatcher =getServletContext().getRequestDispatcher("/DisplayAllBooks.jsp");
 			dispatcher.forward(request, response);
 
 		} catch (Exception e) {

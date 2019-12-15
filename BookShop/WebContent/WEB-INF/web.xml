@@ -63,6 +63,11 @@
 		<servlet-name>DeleteFromCartServlet</servlet-name>
 		<servlet-class>com.bookshop.servlets.DeleteFromCartServlet</servlet-class>
 	</servlet>
+	
+	<servlet>
+		<servlet-name>AdminLoginServlet</servlet-name>
+		<servlet-class>com.bookshop.servlets.AdminLoginServlet</servlet-class>
+	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>AddNewBookServlet</servlet-name>
@@ -112,6 +117,11 @@
 	<servlet-mapping>
 		<servlet-name>DeleteFromCartServlet</servlet-name>
 		<url-pattern>/deleteFromCart.html</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AdminLoginServlet</servlet-name>
+		<url-pattern>/adminLogin.html</url-pattern>
 	</servlet-mapping>
 
 
