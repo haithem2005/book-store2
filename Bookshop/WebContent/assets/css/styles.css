@@ -1,0 +1,480 @@
+@import
+	url('https://fonts.googleapis.com/css?family=Black+Ops+One|Pattaya&display=swap');
+
+body, html {
+	background: url(../book.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.bar-lg {
+	background-color: transparent !important;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out,
+		border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	border: none;
+}
+/*.bar-lg:hover{
+    background-color: rgba(255,255,255,0.7) !important ;
+}*/
+.navbar-light .navbar-toggler {
+	border: none;
+}
+
+.nav-item a {
+	color: #f6f6f6 !important;
+	margin-left: 20px;
+	-moz-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+}
+
+.nav-item a:hover {
+	transform: translatex(20px);
+	color: #800000 !important;
+}
+
+.dropdown-menu a:hover {
+	transform: translatex(20px);
+	color: #800000 !important;
+	background-color: transparent;
+}
+
+.navbar-nav, .dropdown-menu {
+	background-color: transparent;
+	border: none;
+}
+
+.no-gutters {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.header-list li {
+	display: inline;
+	text-decoration: none;
+	font-size: x-large;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.header-list {
+	margin-right: 20px;
+	margin-top: 10px;
+	text-align: right;
+}
+
+.header-list li a {
+	color: #800000 !important;
+}
+
+.header-list li  #myModal {
+	color: #800000 !important;
+}
+
+.pointer {
+	cursor: pointer;
+}
+/*.header-list1{
+    background-color: transparent;
+}*/
+.navedite {
+	background-color: transparent !important;
+}
+
+.card img {
+	min-height: 300px;
+	max-height: 300px;
+	height: 300px;
+	margin: auto;
+	border-top-right-radius: 10%;
+	border-top-left-radius: 10%;
+}
+
+.card-text {
+	max-height: 75px;
+	min-height: 75px;
+}
+
+.card-body {
+	min-height: 300px;
+	max-height: 300px;
+	height: 300px;
+}
+
+.card-body form {
+	min-height: 50px;
+	max-height: 50px;
+	height: 50px;
+}
+
+.card {
+	margin: 10px;
+	min-height: 500px;
+	min-width: 30%;
+	border-radius: 10%;
+	color: #2f4f4f;
+}
+
+.card-footer {
+	text-align: center;
+}
+
+.carousel-inner img {
+	max-height: 500px;
+}
+
+.price {
+	color: red;
+}
+
+.sub-title {
+	margin-top: 50px;
+	margin-left: 20px;
+	font-family: 'Pattaya', sans-serif;
+	color: #800000;
+}
+
+.main-title {
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: 'Black Ops One', cursive;
+	color: #800000;
+}
+/* Quotes */
+.media img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.media {
+	margin-top: 50px;
+	margin-left: 20px;
+	margin-bottom: 50px;
+}
+
+.quates-heading {
+	color: black;
+}
+/* Block dividers */
+.block-divider {
+	width: 75px;
+	height: 5px;
+	border: 0;
+	background-color: #444;
+}
+
+.block-divider--orange {
+	background-color: #800000;
+	margin-top: 50px;
+}
+
+.block-divider--white {
+	background-color: white;
+}
+
+.block-divider--short {
+	width: 35px;
+}
+
+.aboutUs {
+	font-size: 50px;
+	text-align: left;
+	margin-bottom: 25px;
+}
+/*---------------events-form/events-page-----------------------*/
+.center-form {
+	margin: 0 auto;
+	padding-top: 50px;
+	max-width: 70%;
+}
+
+.form-item {
+	margin-bottom: 10px;
+	border: 3px solid;
+	border-color: #858181;
+}
+
+button
+[type="submit"] {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: #fafafa;
+	border: none;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out,
+		border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-secondary
+:hover {
+	background-color: #858181 !important;
+	color: yellow !important;
+}
+
+@media ( min-width :776px) {
+	.center-form {
+		min-height: 240px;
+		max-width: 50%;
+		margin: 0 auto;
+	}
+}
+
+.navedite {
+	background-color: transparent !important;
+}
+
+.card img {
+	min-height: 300px;
+	max-height: 300px;
+	height: 300px;
+	margin: auto;
+	border-top-right-radius: 10%;
+	border-top-left-radius: 10%;
+}
+
+.card-text {
+	max-height: 75px;
+	min-height: 75px;
+}
+
+.card-body {
+	min-height: 300px;
+	max-height: 300px;
+	height: 300px;
+}
+
+.card-body form {
+	min-height: 50px;
+	max-height: 50px;
+	height: 50px;
+}
+
+.card {
+	margin-top: 30px;
+	min-height: 500px;
+	min-width: 30%;
+	border-radius: 10%;
+	color: #2f4f4f;
+}
+
+.card-footer1 {
+	
+	text-align:center;
+}
+.btt{
+color:f6f6f6;	
+}
+
+.carousel-inner img {
+	max-height: 500px;
+}
+
+.price {
+	color: red;
+}
+
+.sub-title {
+	margin-top: 50px;
+	margin-left: 20px;
+	font-family: 'Pattaya', sans-serif;
+	color: #800000;
+}
+
+.main-title {
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: 'Black Ops One', cursive;
+	color: #800000;
+}
+/* Quotes */
+.media img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.media {
+	margin-top: 50px;
+	margin-left: 20px;
+	margin-bottom: 50px;
+}
+
+.quates-heading {
+	color: black;
+}
+/* Block dividers */
+.block-divider {
+	width: 75px;
+	height: 5px;
+	border: 0;
+	background-color: #444;
+}
+
+.block-divider--orange {
+	background-color: #800000;
+	margin-top: 50px;
+}
+
+.block-divider--white {
+	background-color: white;
+}
+
+.block-divider--short {
+	width: 35px;
+}
+
+.aboutUs {
+	font-size: 50px;
+	text-align: left;
+	margin-bottom: 25px;
+}
+/*---------------events-form/events-page-----------------------*/
+.center-form {
+	margin: 0 auto;
+	padding-top: 50px;
+	max-width: 70%;
+}
+
+.form-item {
+	margin-bottom: 10px;
+	border: 3px solid;
+	border-color: #858181;
+}
+
+button[type="submit"] {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: #fafafa;
+	border: none;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out,
+		border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-secondary:hover {
+	background-color: #858181 !important;
+	color: yellow !important;
+}
+
+@media ( min-width :776px) {
+	.center-form {
+		min-height: 240px;
+		max-width: 50%;
+		margin: 0 auto;
+	}
+}
+
+.events-text {
+	color: #fafafa;
+}
+/*section for form*/
+.login-container {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.login-form-1 {
+	padding: 5%;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0
+		rgba(0, 0, 0, 0.19);
+}
+
+.login-form-1 h3 {
+	text-align: center;
+	color: #333;
+}
+
+.login-container form {
+	padding: 10%;
+}
+
+.btnSubmit {
+	width: 50%;
+	border-radius: 1rem;
+	padding: 1.5%;
+	border: none;
+	cursor: pointer;
+}
+
+.login-form-1 .btnSubmit {
+	font-weight: 600;
+	color: #fff;
+	background-color: #0062cc;
+}
+
+.login-form-1 .ForgetPwd {
+	color: #0062cc;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.form-control {
+	width: 75%;
+	margin-left: 15px;
+	margin-right: 0px;
+}
+
+.header-list {
+	padding: 0px;
+}
+
+
+
+.badge {
+	position: relative;
+	margin-left: 60%;
+	margin-top: -60%;
+}
+/*---------------footer-----------------------*/
+footer {
+	background-color: transparent;
+	color: #FEF9F9;
+	min-height: 120px;
+	margin-top: 50px;
+}
+
+.footer-heading {
+	color: #800000;
+}
+
+.social {
+	padding-bottom: 15px;
+}
+
+.social li a i {
+	margin-top: 10px;
+	font-size: 20px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	padding: 12px 0;
+	border-radius: 50%;
+	background-color: #8f8f8f;
+	color: #fafafa;
+	line-height: 16px;
+	transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+}
+
+.social li a i:hover {
+	background: #E70E13;
+}
+
+#footer-details {
+	padding: 20px;
+}
+
+
+footer{
+	background-color:rgba(255,255,255,0.6);
+}
+
+.address {
+	margin-top: 25px;
+	color: #f6f6f6;
+}
+
+
